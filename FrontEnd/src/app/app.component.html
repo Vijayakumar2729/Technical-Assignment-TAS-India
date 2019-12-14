@@ -1,0 +1,7 @@
+<div *ngIf="userService.userSensorDetailInfo">
+  <app-side-navigation></app-side-navigation>
+
+</div>
+<div *ngIf="!userService.userSensorDetailInfo">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,18 @@
+{
+    "Equipment_info":{
+        "Name": "Radiation Sensor",
+        "Make": "XXXX XXXX",
+        "Model": "YYYY YYYY",
+        "Serial_Number": "123123123",
+        "Warranty": "5 Years",
+        "Image": "radiation_sensor.jpg"
+    },
+    "Live_data":{
+       "Timestamp":"YYYY-MM-DD hh:mm:ss",
+        "Irradiance":  "321 w/m2",
+        "sensor_temperature":  "55 degC",
+        "wind_speed": "20 km/h",
+        "wind_direction": "30 deg",
+        "sensor_status": "HEALTHY"
+   }
+}

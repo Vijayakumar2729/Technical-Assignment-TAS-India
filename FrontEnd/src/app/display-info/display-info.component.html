@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card" *ngIf="sensorsData">
+      <div class="card-body">
+        <form class="" role="form">
+          <h2>Machine Info</h2>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>NAME: {{sensorsData.Equipment_info.Name}}</mat-card-title>
+              <mat-card-subtitle>MAKE: {{sensorsData.Equipment_info.Make}}</mat-card-subtitle>
+              <mat-card-subtitle>MODEL: {{sensorsData.Equipment_info.Model}}</mat-card-subtitle>
+              <mat-card-subtitle>SERIAL NUMBER: {{sensorsData.Equipment_info.Serial_Number}}</mat-card-subtitle>
+              <mat-card-subtitle>WARRANTY: {{sensorsData.Equipment_info.Warranty}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../assets/sensor.jpg" alt="">
+            <mat-card-content>
+              <div class="form-group col-sm-6">
+                <label for="firstName" class="col-sm-3 control-label">Irradiance:</label>&nbsp;&nbsp;&nbsp;
+                <label for="firstName" class="col-sm-3 control-label">{{sensorsData.Live_data.Irradiance}}</label>
+              </div>
+            </mat-card-content>
+            <mat-card-content>
+              <div class="form-group col-sm-6">
+                <label for="firstName" class="col-sm-3 control-label">Sensor Temperature:</label>&nbsp;&nbsp;&nbsp;
+                <label for="firstName" class="col-sm-3 control-label">{{sensorsData.Live_data.sensor_temperature}}</label>
+              </div>
+            </mat-card-content>
+            <mat-card-content>
+              <div class="form-group col-sm-6">
+                <label for="firstName" class="col-sm-3 control-label">Wind Speed:</label>&nbsp;&nbsp;&nbsp;
+                <label for="firstName" class="col-sm-3 control-label">{{sensorsData.Live_data.wind_speed}}</label>
+              </div>
+            </mat-card-content>
+            <mat-card-content>
+              <div class="form-group col-sm-6">
+                <label for="firstName" class="col-sm-3 control-label">Wind Direction:</label>&nbsp;&nbsp;&nbsp;
+                <label for="firstName" class="col-sm-3 control-label">{{sensorsData.Live_data.wind_direction}}</label>
+              </div>
+            </mat-card-content>
+            <mat-card-content>
+              <div class="form-group col-sm-6">
+                <label for="firstName" class="col-sm-3 control-label">Sensor Status:</label>&nbsp;&nbsp;&nbsp;
+                <label for="firstName" class="col-sm-3 control-label">{{sensorsData.Live_data.sensor_status}}</label>
+              </div>
+            </mat-card-content>
+          </mat-card>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<br><br>
+<article class="bg-secondary mb-3">
+</article>

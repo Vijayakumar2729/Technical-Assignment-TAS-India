@@ -1,0 +1,22 @@
+
+
+  <div class ="main-card">
+    <div class="card-style">
+      <div class="loginmodal-container">
+        <h1>Login</h1><br>
+        <form name="form">
+        <input type="text" name="user" placeholder="Enter your Email" [(ngModel)]="user.email">
+        <div class="invalid-text" class="aler alert-danger">
+        </div>
+
+        <input type="password" name="pass" placeholder="Enter your password" [(ngModel)]="user.password" #pass="ngModel" required>
+        <button type="submit" style="margin-left: 38%;" (click)= "patientLogin()" >Login</button>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
